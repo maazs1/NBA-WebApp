@@ -7,6 +7,7 @@ app.engine('hbs', hbs({extname: 'hbs', defaultLayout:'layout', layoutsDir: __dir
 
 app.set('view engine', 'hbs');
 
+
  
 app.get('/', function (req, res) {
   res.send('NBA')

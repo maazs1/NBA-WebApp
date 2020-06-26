@@ -6,8 +6,30 @@
     <title>{{ title }}</title>
 </head>
 <body>
-    {{# each anyArray }}
-        {{ this.name }}
-    {{/each}}
+    <p>{{ConferenceE}}</p>
+    <ol>
+        {{# each eastTeam }}
+            <li>
+                <p>{{ this.name }} </p>
+                <p>Wins: {{ this.win }} Losses: {{ this.loss }}</p>
+            </li>                
+        {{/each}}
+    </ol>
+
+    <p>{{ConferenceW}}</p>
+
+    <ol>
+        {{# each westTeam }}
+            <li>
+                <p>{{ this.name }} </p>
+                <p>Wins: {{ this.win }} Losses: {{ this.loss }}</p>
+            </li>
+                
+        {{/each}}
+    </ol>
+
+
+        
+
 </body>
 </html>

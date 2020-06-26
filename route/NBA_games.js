@@ -5,6 +5,8 @@ const axios = require("axios")
 const path = require('path')
 const app = express();
 
+
+
 route.get("/", async (req, res) => {
     try{
         const response = await axios.get('http://data.nba.net/10s/prod/v4/today.json');
@@ -16,6 +18,9 @@ route.get("/", async (req, res) => {
               
         let eastside = []
         let westside = []
+
+
+
 
         for (i=0;i<EastTeams.length; i++){
             eastside.push({
@@ -34,7 +39,8 @@ route.get("/", async (req, res) => {
         }
     
         res.render('layout', {
-            title:"NBA Standing", anyArray: eastside
+            title:"NBA Standing", ConferenceE:"East: ", eastTeam: eastside
+            , westTeam: westside, ConferenceW: "West: "
         })
              
     }
