@@ -1,0 +1,20 @@
+body{
+    background-color: dimgray;
+}
+.EastContainer, .WestContainer{
+    width: 300px;
+    float: left;
+    align-content:center;
+}
+.EastContainer{
+    background-color: crimson;
+}
+.WestContainer{
+    background-color: dodgerblue;
+}
+#Conference{
+    font-size:30px;
+}
+#displayTitle{
+    text-align: center;
+}

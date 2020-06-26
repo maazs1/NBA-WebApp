@@ -7,27 +7,38 @@
     <link rel="stylesheet" href="/stylesheets/style.css"
 </head>
 <body>
-    <p>{{ConferenceE}}</p>
-    <ol>
-        {{# each eastTeam }}
-            <li>
-                <p>{{ this.name }} </p>
-                <p>Wins: {{ this.win }} Losses: {{ this.loss }}</p>
-            </li>                
-        {{/each}}
-    </ol>
+    <h1 id="displayTitle">{{display}} </h1>
+    
+    <div class = "EastContainer">
+        <p id="Conference">{{ConferenceE}}</p>
 
-    <p>{{ConferenceW}}</p>
+        <ol>
+            {{# each eastTeam }}
+                <li>
+                    <p>{{ this.name }} </p>
+                    <p>Wins: {{ this.win }} Losses: {{ this.loss }}</p>
+                </li>                
+            {{/each}}
+        </ol>
+    </div>
 
-    <ol>
-        {{# each westTeam }}
-            <li>
-                <p>{{ this.name }} </p>
-                <p>Wins: {{ this.win }} Losses: {{ this.loss }}</p>
-            </li>
-                
-        {{/each}}
-    </ol>
+    <div class = "WestContainer">
+        <p id="Conference">{{ConferenceW}}</p>
+        <ol>
+            {{# each westTeam }}
+                <li>
+                    <p>{{ this.name }} </p>
+                    <p>Wins: {{ this.win }} Losses: {{ this.loss }}</p>
+                </li>
+                    
+            {{/each}}
+        </ol>
+    </div>
+        
+
+    
+
+
 
 
         
