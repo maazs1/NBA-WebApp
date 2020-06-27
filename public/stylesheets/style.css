@@ -24,13 +24,13 @@ body{
     float: right;
 }
 .SouthWestContainer{
-    background-color: orangered;
+    background-color: burlywood;
 }
 .NorthWestContainer{
-    background-color: purple;
+    background-color: cornflowerblue;
 }
 .PacificContainer{
-    background-color: teal;
+    background-color: thistle;
 }
 .SouthEastContainer{
     background-color: lightsalmon;

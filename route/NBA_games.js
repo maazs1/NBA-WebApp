@@ -19,6 +19,7 @@ route.get("/", async (req, res) => {
         const EastDiv = teamDivStandings.data.league.standard.conference.east
         const WestDiv = teamDivStandings.data.league.standard.conference.west
 
+
         const Atlantic = EastDiv.atlantic
         const Central = EastDiv.central
         const SouthEast = EastDiv.southeast
@@ -102,6 +103,7 @@ route.get("/", async (req, res) => {
             SWDivision:"SouthWest", southwestTeam: southeastside
 
         })
+
              
     }
     catch(e){
