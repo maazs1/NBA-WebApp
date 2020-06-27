@@ -7,41 +7,120 @@
     <link rel="stylesheet" href="/stylesheets/style.css"
 </head>
 <body>
+
     <h1 id="displayTitle">{{display}} </h1>
-    
-    <div class = "EastContainer">
-        <p id="Conference">{{ConferenceE}}</p>
 
-        <ol>
-            {{# each eastTeam }}
-                <li>
-                    <p>{{ this.name }} </p>
-                    <p>Wins: {{ this.win }} Losses: {{ this.loss }}</p>
-                </li>                
-            {{/each}}
-        </ol>
+
+    <div class = "ConferenceSplit", id = "confText">
+        
+        <div class = "EastContainer">
+            <p id="Conference">{{ConferenceE}}</p>
+
+            <ol>
+                {{# each eastTeam }}
+                    <li>
+                        <p>{{ this.name }} </p>
+                        <p>Wins: {{ this.win }} Losses: {{ this.loss }}</p>
+                    </li>                
+                {{/each}}
+            </ol>
+        </div>
+
+        <div class = "WestContainer">
+            <p id="Conference">{{ConferenceW}}</p>
+            <ol>
+                {{# each westTeam }}
+                    <li>
+                        <p>{{ this.name }} </p>
+                        <p>Wins: {{ this.win }} Losses: {{ this.loss }}</p>
+                    </li>
+                        
+                {{/each}}
+            </ol>
+        </div>
     </div>
 
-    <div class = "WestContainer">
-        <p id="Conference">{{ConferenceW}}</p>
-        <ol>
-            {{# each westTeam }}
-                <li>
-                    <p>{{ this.name }} </p>
-                    <p>Wins: {{ this.win }} Losses: {{ this.loss }}</p>
-                </li>
-                    
-            {{/each}}
-        </ol>
+    <div class = "DivSplit", id = "divText"> 
+        <div class = "AtlanticContainer">
+            <p id="Conference">{{AtlDivision}}</p>
+            <ol>
+                {{# each atlanticTeam }}
+                    <li>
+                        <p>{{ this.name }} </p>
+                        <p>Wins: {{ this.win }} Losses: {{ this.loss }}</p>
+                    </li>
+                        
+                {{/each}}
+            </ol>
+        </div>
+
+        <div class = "CentralContainer">
+            <p id="Conference">{{CtlDivision}}</p>
+            <ol>
+                {{# each centralTeam }}
+                    <li>
+                        <p>{{ this.name }} </p>
+                        <p>Wins: {{ this.win }} Losses: {{ this.loss }}</p>
+                    </li>
+                        
+                {{/each}}
+            </ol>
+        </div>
+
+        <div class = "SouthEastContainer">
+            <p id="Conference">{{SEDivision}}</p>
+            <ol>
+                {{# each southeastTeam }}
+                    <li>
+                        <p>{{ this.name }} </p>
+                        <p>Wins: {{ this.win }} Losses: {{ this.loss }}</p>
+                    </li>
+                        
+                {{/each}}
+            </ol>
+        </div>
+
+        <div class = "NorthWestContainer">
+            <p id="Conference">{{NWDivision}}</p>
+            <ol>
+                {{# each northwestTeam }}
+                    <li>
+                        <p>{{ this.name }} </p>
+                        <p>Wins: {{ this.win }} Losses: {{ this.loss }}</p>
+                    </li>
+                        
+                {{/each}}
+            </ol>
+        </div>
+
+        <div class = "PacificContainer">
+            <p id="Conference">{{PacificDivision}}</p>
+            <ol>
+                {{# each pacificTeam }}
+                    <li>
+                        <p>{{ this.name }} </p>
+                        <p>Wins: {{ this.win }} Losses: {{ this.loss }}</p>
+                    </li>
+                        
+                {{/each}}
+            </ol>
+        </div>
+
+        <div class = "SouthWestContainer">
+            <p id="Conference">{{SWDivision}}</p>
+            <ol>
+                {{# each southwestTeam }}
+                    <li>
+                        <p>{{ this.name }} </p>
+                        <p>Wins: {{ this.win }} Losses: {{ this.loss }}</p>
+                    </li>
+                        
+                {{/each}}
+            </ol>
+        </div>      
+
     </div>
-        
 
-    
-
-
-
-
-        
 
 </body>
 </html>

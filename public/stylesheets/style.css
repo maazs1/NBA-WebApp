@@ -1,10 +1,49 @@
 body{
     background-color: dimgray;
+
+}
+.ConferenceSplit{
+    align-content:center;
+    width: 50%;
+}
+.DivSplit{
+    align-content:center;
+    width: 100%;
 }
 .EastContainer, .WestContainer{
-    width: 300px;
+    width:200px;
     float: left;
-    align-content:center;
+    width: 50%;
+}
+.AtlanticContainer, .CentralContainer, .SouthEastContainer{
+    width:200px;
+    float: right;
+}
+.NorthWestContainer, .PacificContainer, .SouthWestContainer{
+    width:200px;
+    float: right;
+}
+.SouthWestContainer{
+    background-color: orangered;
+}
+.NorthWestContainer{
+    background-color: purple;
+}
+.PacificContainer{
+    background-color: teal;
+}
+.SouthEastContainer{
+    background-color: lightsalmon;
+}
+
+.CentralContainer{
+    background-color: mediumpurple;
+}
+.AtlanticContainer{
+    background-color: lightgreen;
+}
+.SouthEastContainer{
+    background-color: powderblue;
 }
 .EastContainer{
     background-color: crimson;
