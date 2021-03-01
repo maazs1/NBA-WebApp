@@ -1,1 +1,1 @@
-RESTful API app developed with Node.js, Express.js, and Handlebars.js to currently gather information from the NBA data store and display teams standings from the current 2019-2020 NBA Season. It is important to install node.js and express.js to properly run this program on "http://localhost:3000"
+RESTful API app developed with Node.js, Express.js, and Handlebars.js to currently gather information from the NBA data store and display teams standings from the current 2019-2020 NBA Season
